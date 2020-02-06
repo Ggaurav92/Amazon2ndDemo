@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.amazon.testpage.LoginTest">
         <methods>
@@ -9,21 +9,9 @@
           <include name="beforeClass"/>
           <include name="afterClass"/>
           <include name="ScenarioSix" invocation-numbers="0"/>
-          <include name="ScenarioTwo" invocation-numbers="0"/>
-          <include name="ScenarioSeven" invocation-numbers="0"/>
           <include name="afterMethod"/>
-          <include name="ScenarioThree" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.amazon.testpage.LoginTest -->
-      <class name="com.amazon.testpage.RegistrationTest">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-          <include name="afterClass"/>
-          <include name="ScenarioSix" invocation-numbers="0"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- com.amazon.testpage.RegistrationTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

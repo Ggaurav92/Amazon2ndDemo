@@ -5,6 +5,7 @@
     <classes>
       <class name="com.amazon.testpage.LoginTest"/>
       <class name="com.amazon.testpage.RegistrationTest"/>
+      <class name="com.amazon.testpage.CreateWishList"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -4,7 +4,6 @@ package com.amazon.testpage;
 
 import org.testng.annotations.Test;
 
-import com.amazon.pages.LoginPage;
 import com.amazon.pages.RegistrationPage;
 import com.amazon.pages.VerifyUserLoggedInPage;
 import com.aventstack.extentreports.ExtentReports;
@@ -19,14 +18,11 @@ import org.testng.annotations.BeforeClass;
 
 import java.io.File;
 import java.io.IOException;
-import java.sql.Driver;
 import java.util.concurrent.TimeUnit;
 
 import javax.swing.JOptionPane;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -36,7 +32,6 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 
 public class RegistrationTest {
  ChromeDriver driver;
@@ -348,7 +343,7 @@ public class RegistrationTest {
 
   
 
-  RP.EnterUserDetails(fullnm, "7385502840", eml, pwd);
+  RP.EnterUserDetails(fullnm, "8793100405", eml, pwd);
   RegistrationTest.screencapture(driver, "./Screenshots/RegistrationPage/S06I01- RegistrationDetailScreen.png"); // Screenshot code line
   RP.SubmitAction();
   RegistrationTest.screencapture(driver, "./Screenshots/RegistrationPage/S06I02- DetailsSubmitedScreen.png");
