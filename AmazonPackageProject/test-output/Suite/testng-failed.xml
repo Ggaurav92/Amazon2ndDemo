@@ -3,18 +3,6 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.amazon.testpage.LoginTest">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="ScenarioSix" invocation-numbers="0"/>
-          <include name="ScenarioTwo" invocation-numbers="0"/>
-          <include name="ScenarioSeven" invocation-numbers="0"/>
-          <include name="afterMethod"/>
-          <include name="ScenarioThree" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.amazon.testpage.LoginTest -->
       <class name="com.amazon.testpage.RegistrationTest">
         <methods>
           <include name="beforeClass"/>
@@ -24,6 +12,28 @@
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.amazon.testpage.RegistrationTest -->
+      <class name="com.amazon.testpage.CreateWishList">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="ThirdTest"/>
+          <include name="beforeClass"/>
+          <include name="FifthTest"/>
+          <include name="afterMethod"/>
+          <include name="FirstTest"/>
+          <include name="FourthTest"/>
+          <include name="SecondTest"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.amazon.testpage.CreateWishList -->
+      <class name="com.amazon.testpage.LoginTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="ScenarioSix" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.amazon.testpage.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

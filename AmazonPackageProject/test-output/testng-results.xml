@@ -1,21 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
+<testng-results skipped="1" failed="3" ignored="0" total="19" passed="15">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="139351" started-at="2020-02-06T06:29:07 GMT" finished-at="2020-02-06T06:31:26 GMT">
+  <suite name="Suite" duration-ms="278513" started-at="2020-02-06T07:02:05 GMT" finished-at="2020-02-06T07:06:43 GMT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="139351" started-at="2020-02-06T06:29:07 GMT" finished-at="2020-02-06T06:31:26 GMT">
-      <class name="com.amazon.testpage.LoginTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="beforeClass" is-config="true" duration-ms="16288" started-at="2020-02-06T06:29:07 GMT" finished-at="2020-02-06T06:29:23 GMT">
+    <test name="Test" duration-ms="278513" started-at="2020-02-06T07:02:05 GMT" finished-at="2020-02-06T07:06:43 GMT">
+      <class name="com.amazon.testpage.CreateWishList">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.amazon.testpage.CreateWishList@37374a5e]" name="beforeClass" is-config="true" duration-ms="17444" started-at="2020-02-06T07:05:50 GMT" finished-at="2020-02-06T07:06:07 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="beforeMethod" is-config="true" duration-ms="3560" started-at="2020-02-06T06:29:25 GMT" finished-at="2020-02-06T06:29:29 GMT">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.CreateWishList@37374a5e]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2020-02-06T07:06:07 GMT" finished-at="2020-02-06T07:06:07 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="ScenarioFive(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="ScenarioFive" duration-ms="5741" started-at="2020-02-06T06:29:29 GMT" data-provider="getdatalogin" finished-at="2020-02-06T06:29:35 GMT">
+        <test-method status="PASS" signature="FirstTest()[pri:1, instance:com.amazon.testpage.CreateWishList@37374a5e]" name="FirstTest" duration-ms="9917" started-at="2020-02-06T07:06:07 GMT" finished-at="2020-02-06T07:06:17 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FirstTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.CreateWishList@37374a5e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-02-06T07:06:17 GMT" finished-at="2020-02-06T07:06:17 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.CreateWishList@37374a5e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-02-06T07:06:17 GMT" finished-at="2020-02-06T07:06:17 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="SecondTest()[pri:0, instance:com.amazon.testpage.CreateWishList@37374a5e]" name="SecondTest" duration-ms="4032" started-at="2020-02-06T07:06:17 GMT" depends-on-methods="com.amazon.testpage.CreateWishList.FirstTest" finished-at="2020-02-06T07:06:21 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SecondTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.CreateWishList@37374a5e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-02-06T07:06:21 GMT" finished-at="2020-02-06T07:06:21 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="ThirdTest()[pri:0, instance:com.amazon.testpage.CreateWishList@37374a5e]" name="ThirdTest" duration-ms="4613" started-at="2020-02-06T07:06:21 GMT" depends-on-methods="com.amazon.testpage.CreateWishList.SecondTest" finished-at="2020-02-06T07:06:26 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ThirdTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.CreateWishList@37374a5e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-02-06T07:06:21 GMT" finished-at="2020-02-06T07:06:21 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.CreateWishList@37374a5e]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-02-06T07:06:26 GMT" finished-at="2020-02-06T07:06:26 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.CreateWishList@37374a5e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-02-06T07:06:26 GMT" finished-at="2020-02-06T07:06:26 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="FourthTest()[pri:0, instance:com.amazon.testpage.CreateWishList@37374a5e]" name="FourthTest" duration-ms="5548" started-at="2020-02-06T07:06:26 GMT" depends-on-methods="com.amazon.testpage.CreateWishList.ThirdTest" finished-at="2020-02-06T07:06:31 GMT">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a class="a-link-normal a-text-normal" target="_blank" href="/Apple-iPhone-Pro-Max-256GB/dp/B07XLS5796/ref=sr_1_3?keywords=iphone+11+pro+max+256gb&amp;qid=1580972786&amp;sr=8-3">...</a> is not clickable at point (746, 721). Other element would receive the click: <div class="sg-col-inner">...</div>
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PDCDT01GY4ZVQ1', ip: '192.168.2.6', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\P10444~1.PDC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 54c428c044a4453cd8e9bd1928a24953]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="a-link-normal a-text-normal" target="_blank" href="/Apple-iPhone-Pro-Max-256GB/dp/B07XLS5796/ref=sr_1_3?keywords=iphone+11+pro+max+256gb&amp;qid=1580972786&amp;sr=8-3">...</a> is not clickable at point (746, 721). Other element would receive the click: <div class="sg-col-inner">...</div>
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PDCDT01GY4ZVQ1', ip: '192.168.2.6', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\P10444~1.PDC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 54c428c044a4453cd8e9bd1928a24953
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy12.click(Unknown Source)
+at com.amazon.pages.WishListPage.CreateProductWish(WishListPage.java:162)
+at com.amazon.testpage.CreateWishList.FourthTest(CreateWishList.java:109)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FourthTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.CreateWishList@37374a5e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-02-06T07:06:31 GMT" finished-at="2020-02-06T07:06:31 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="FifthTest()[pri:0, instance:com.amazon.testpage.CreateWishList@37374a5e]" name="FifthTest" duration-ms="0" started-at="2020-02-06T07:06:31 GMT" depends-on-methods="com.amazon.testpage.CreateWishList.FourthTest" finished-at="2020-02-06T07:06:31 GMT">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CreateWishList.FifthTest()[pri:0, instance:com.amazon.testpage.CreateWishList@37374a5e] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CreateWishList.FifthTest()[pri:0, instance:com.amazon.testpage.CreateWishList@37374a5e] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FifthTest -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.amazon.testpage.CreateWishList@37374a5e]" name="afterClass" is-config="true" duration-ms="11946" started-at="2020-02-06T07:06:31 GMT" finished-at="2020-02-06T07:06:43 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.amazon.testpage.CreateWishList -->
+      <class name="com.amazon.testpage.LoginTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="beforeClass" is-config="true" duration-ms="5515" started-at="2020-02-06T07:04:19 GMT" finished-at="2020-02-06T07:04:25 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="beforeMethod" is-config="true" duration-ms="2041" started-at="2020-02-06T07:04:25 GMT" finished-at="2020-02-06T07:04:27 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="ScenarioFive(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="ScenarioFive" duration-ms="4372" started-at="2020-02-06T07:04:27 GMT" data-provider="getdatalogin" finished-at="2020-02-06T07:04:31 GMT">
           <params>
             <param index="0">
               <value>
@@ -56,27 +214,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScenarioFive -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-02-06T06:29:35 GMT" finished-at="2020-02-06T06:29:35 GMT">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-02-06T07:04:31 GMT" finished-at="2020-02-06T07:04:31 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="beforeMethod" is-config="true" duration-ms="1059" started-at="2020-02-06T06:29:35 GMT" finished-at="2020-02-06T06:29:36 GMT">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="beforeMethod" is-config="true" duration-ms="588" started-at="2020-02-06T07:04:31 GMT" finished-at="2020-02-06T07:04:32 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="ScenarioFour()[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="ScenarioFour" duration-ms="1195" started-at="2020-02-06T06:29:36 GMT" finished-at="2020-02-06T06:29:37 GMT">
+        <test-method status="PASS" signature="ScenarioFour()[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="ScenarioFour" duration-ms="872" started-at="2020-02-06T07:04:32 GMT" finished-at="2020-02-06T07:04:33 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScenarioFour -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-02-06T06:29:37 GMT" finished-at="2020-02-06T06:29:37 GMT">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-02-06T07:04:33 GMT" finished-at="2020-02-06T07:04:33 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="beforeMethod" is-config="true" duration-ms="646" started-at="2020-02-06T06:29:37 GMT" finished-at="2020-02-06T06:29:38 GMT">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="beforeMethod" is-config="true" duration-ms="667" started-at="2020-02-06T07:04:33 GMT" finished-at="2020-02-06T07:04:34 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="ScenarioOne(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="ScenarioOne" duration-ms="51535" started-at="2020-02-06T06:29:38 GMT" data-provider="getdatalogin" finished-at="2020-02-06T06:30:29 GMT">
+        <test-method status="PASS" signature="ScenarioOne(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="ScenarioOne" duration-ms="29892" started-at="2020-02-06T07:04:34 GMT" data-provider="getdatalogin" finished-at="2020-02-06T07:05:04 GMT">
           <params>
             <param index="0">
               <value>
@@ -117,15 +275,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScenarioOne -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-02-06T06:30:29 GMT" finished-at="2020-02-06T06:30:29 GMT">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-02-06T07:05:04 GMT" finished-at="2020-02-06T07:05:04 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="beforeMethod" is-config="true" duration-ms="656" started-at="2020-02-06T06:30:29 GMT" finished-at="2020-02-06T06:30:30 GMT">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="beforeMethod" is-config="true" duration-ms="557" started-at="2020-02-06T07:05:04 GMT" finished-at="2020-02-06T07:05:04 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="ScenarioSeven(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="ScenarioSeven" duration-ms="2048" started-at="2020-02-06T06:30:30 GMT" data-provider="getdatalogin" finished-at="2020-02-06T06:30:32 GMT">
+        <test-method status="PASS" signature="ScenarioSeven(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="ScenarioSeven" duration-ms="1917" started-at="2020-02-06T07:05:04 GMT" data-provider="getdatalogin" finished-at="2020-02-06T07:05:06 GMT">
           <params>
             <param index="0">
               <value>
@@ -166,15 +324,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScenarioSeven -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-02-06T06:30:32 GMT" finished-at="2020-02-06T06:30:32 GMT">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-02-06T07:05:06 GMT" finished-at="2020-02-06T07:05:06 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="beforeMethod" is-config="true" duration-ms="760" started-at="2020-02-06T06:30:32 GMT" finished-at="2020-02-06T06:30:33 GMT">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="beforeMethod" is-config="true" duration-ms="659" started-at="2020-02-06T07:05:06 GMT" finished-at="2020-02-06T07:05:07 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="ScenarioSix(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="ScenarioSix" duration-ms="26830" started-at="2020-02-06T06:30:33 GMT" data-provider="getdatalogin" finished-at="2020-02-06T06:31:00 GMT">
+        <test-method status="FAIL" signature="ScenarioSix(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="ScenarioSix" duration-ms="21106" started-at="2020-02-06T07:05:07 GMT" data-provider="getdatalogin" finished-at="2020-02-06T07:05:28 GMT">
           <params>
             <param index="0">
               <value>
@@ -220,8 +378,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'PDCDT01GY4ZVQ1', ip: '192.168.2.6', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\P10444~1.PDC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55195}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: edc73d2b1dd6de93814e54e97b11837b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\P10444~1.PDC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55710}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b8fcbccd82e761938644a014b8b448a
 *** Element info: {Using=xpath, value=//a[@id='nav-link-accountList']/span[contains(text(),'Hello,')]}]]>
             </message>
             <full-stacktrace>
@@ -231,8 +389,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'PDCDT01GY4ZVQ1', ip: '192.168.2.6', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\P10444~1.PDC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55195}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: edc73d2b1dd6de93814e54e97b11837b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\P10444~1.PDC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55710}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b8fcbccd82e761938644a014b8b448a
 *** Element info: {Using=xpath, value=//a[@id='nav-link-accountList']/span[contains(text(),'Hello,')]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -287,15 +445,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScenarioSix -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="afterMethod" is-config="true" duration-ms="5" started-at="2020-02-06T06:31:00 GMT" finished-at="2020-02-06T06:31:00 GMT">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-02-06T07:05:28 GMT" finished-at="2020-02-06T07:05:28 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="beforeMethod" is-config="true" duration-ms="1248" started-at="2020-02-06T06:31:00 GMT" finished-at="2020-02-06T06:31:01 GMT">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="beforeMethod" is-config="true" duration-ms="522" started-at="2020-02-06T07:05:28 GMT" finished-at="2020-02-06T07:05:29 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="ScenarioThree(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="ScenarioThree" duration-ms="10698" started-at="2020-02-06T06:31:01 GMT" data-provider="getdatalogin" finished-at="2020-02-06T06:31:12 GMT">
+        <test-method status="PASS" signature="ScenarioThree(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="ScenarioThree" duration-ms="16499" started-at="2020-02-06T07:05:29 GMT" data-provider="getdatalogin" finished-at="2020-02-06T07:05:45 GMT">
           <params>
             <param index="0">
               <value>
@@ -336,15 +494,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScenarioThree -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-02-06T06:31:12 GMT" finished-at="2020-02-06T06:31:12 GMT">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-02-06T07:05:45 GMT" finished-at="2020-02-06T07:05:45 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="beforeMethod" is-config="true" duration-ms="809" started-at="2020-02-06T06:31:12 GMT" finished-at="2020-02-06T06:31:13 GMT">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="beforeMethod" is-config="true" duration-ms="458" started-at="2020-02-06T07:05:45 GMT" finished-at="2020-02-06T07:05:46 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="ScenarioTwo(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="ScenarioTwo" duration-ms="4539" started-at="2020-02-06T06:31:13 GMT" data-provider="getdatalogin" finished-at="2020-02-06T06:31:17 GMT">
+        <test-method status="PASS" signature="ScenarioTwo(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="ScenarioTwo" duration-ms="1772" started-at="2020-02-06T07:05:46 GMT" data-provider="getdatalogin" finished-at="2020-02-06T07:05:47 GMT">
           <params>
             <param index="0">
               <value>
@@ -385,15 +543,341 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScenarioTwo -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-02-06T06:31:17 GMT" finished-at="2020-02-06T06:31:17 GMT">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-02-06T07:05:47 GMT" finished-at="2020-02-06T07:05:47 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.amazon.testpage.LoginTest@1060b431]" name="afterClass" is-config="true" duration-ms="8698" started-at="2020-02-06T06:31:17 GMT" finished-at="2020-02-06T06:31:26 GMT">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.amazon.testpage.LoginTest@8646db9]" name="afterClass" is-config="true" duration-ms="2120" started-at="2020-02-06T07:05:47 GMT" finished-at="2020-02-06T07:05:50 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.amazon.testpage.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.amazon.testpage.RegistrationTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="beforeClass" is-config="true" duration-ms="5171" started-at="2020-02-06T07:02:05 GMT" finished-at="2020-02-06T07:02:10 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="beforeMethod" is-config="true" duration-ms="3207" started-at="2020-02-06T07:02:11 GMT" finished-at="2020-02-06T07:02:15 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="ScenarioFive(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="ScenarioFive" duration-ms="3780" started-at="2020-02-06T07:02:15 GMT" data-provider="getdata" finished-at="2020-02-06T07:02:18 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gaurav Garje]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8421352651]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[example.amazon@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Abcdef123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Hello, Gaurav]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScenarioFive -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-02-06T07:02:18 GMT" finished-at="2020-02-06T07:02:18 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="beforeMethod" is-config="true" duration-ms="2292" started-at="2020-02-06T07:02:18 GMT" finished-at="2020-02-06T07:02:21 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="ScenarioFour(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="ScenarioFour" duration-ms="1975" started-at="2020-02-06T07:02:21 GMT" data-provider="getdata" finished-at="2020-02-06T07:02:23 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gaurav Garje]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8421352651]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[example.amazon@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Abcdef123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Hello, Gaurav]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScenarioFour -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-02-06T07:02:23 GMT" finished-at="2020-02-06T07:02:23 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="beforeMethod" is-config="true" duration-ms="1744" started-at="2020-02-06T07:02:23 GMT" finished-at="2020-02-06T07:02:25 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="ScenarioOne(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="ScenarioOne" duration-ms="30796" started-at="2020-02-06T07:02:25 GMT" data-provider="getdata" finished-at="2020-02-06T07:02:55 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gaurav Garje]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8421352651]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[example.amazon@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Abcdef123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Hello, Gaurav]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScenarioOne -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-02-06T07:02:55 GMT" finished-at="2020-02-06T07:02:55 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="beforeMethod" is-config="true" duration-ms="1615" started-at="2020-02-06T07:02:56 GMT" finished-at="2020-02-06T07:02:57 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="ScenarioSeven(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="ScenarioSeven" duration-ms="13845" started-at="2020-02-06T07:02:57 GMT" data-provider="getdata" finished-at="2020-02-06T07:03:11 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gaurav Garje]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8421352651]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[example.amazon@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Abcdef123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Hello, Gaurav]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScenarioSeven -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-02-06T07:03:11 GMT" finished-at="2020-02-06T07:03:11 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="beforeMethod" is-config="true" duration-ms="1927" started-at="2020-02-06T07:03:11 GMT" finished-at="2020-02-06T07:03:13 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="ScenarioSix(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="ScenarioSix" duration-ms="3445" started-at="2020-02-06T07:03:13 GMT" data-provider="getdata" finished-at="2020-02-06T07:03:16 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gaurav Garje]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8421352651]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[example.amazon@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Abcdef123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Hello, Gaurav]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [You indicated you are a new customer, but an account already exists with the mobile number +91 7385502840] but found [You indicated you are a new customer, but an account already exists with the mobile number +91 8793100405]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [You indicated you are a new customer, but an account already exists with the mobile number +91 7385502840] but found [You indicated you are a new customer, but an account already exists with the mobile number +91 8793100405]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at com.amazon.testpage.RegistrationTest.ScenarioSix(RegistrationTest.java:360)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScenarioSix -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-02-06T07:03:16 GMT" finished-at="2020-02-06T07:03:16 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="beforeMethod" is-config="true" duration-ms="1213" started-at="2020-02-06T07:03:16 GMT" finished-at="2020-02-06T07:03:18 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="ScenarioThree(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="ScenarioThree" duration-ms="29893" started-at="2020-02-06T07:03:18 GMT" data-provider="getdata" finished-at="2020-02-06T07:03:48 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gaurav Garje]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8421352651]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[example.amazon@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Abcdef123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Hello, Gaurav]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScenarioThree -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="afterMethod" is-config="true" duration-ms="3" started-at="2020-02-06T07:03:48 GMT" finished-at="2020-02-06T07:03:48 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="beforeMethod" is-config="true" duration-ms="2175" started-at="2020-02-06T07:03:48 GMT" finished-at="2020-02-06T07:03:50 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="ScenarioTwo(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="ScenarioTwo" duration-ms="26434" started-at="2020-02-06T07:03:50 GMT" data-provider="getdata" finished-at="2020-02-06T07:04:16 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gaurav Garje]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8421352651]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[example.amazon@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Abcdef123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Hello, Gaurav]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScenarioTwo -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-02-06T07:04:16 GMT" finished-at="2020-02-06T07:04:16 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.amazon.testpage.RegistrationTest@66d1af89]" name="afterClass" is-config="true" duration-ms="3024" started-at="2020-02-06T07:04:16 GMT" finished-at="2020-02-06T07:04:19 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.amazon.testpage.RegistrationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

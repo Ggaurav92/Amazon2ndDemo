@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>15/3/1</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jan 27 10:39:52 GMT 2020</td>
+<td>Started on:</td><td>Thu Feb 06 07:02:05 GMT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>262 seconds (262556 ms)</td>
+<tr><td>Total time:</td><td>278 seconds (278513 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,42 +75,35 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.amazon.testpage.LoginTest.ScenarioSeven()'><b>ScenarioSeven</b><br>Test class: com.amazon.testpage.LoginTest<br>Parameters: g.gaurav2812@gmail.com, TWF1bGlAMjgxMiQ=, Hello, Gaurav, invalidEmail, invPass123, 8793100405, 1234</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ap_email&quot;}
+<td title='com.amazon.testpage.CreateWishList.FourthTest()'><b>FourthTest</b><br>Test class: com.amazon.testpage.CreateWishList</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;a-link-normal a-text-normal&quot; target=&quot;_blank&quot; href=&quot;/Apple-iPhone-Pro-Max-256GB/dp/B07XLS5796/ref=sr_1_3?keywords=iphone+11+pro+max+256gb&amp;amp;qid=1580972786&amp;amp;sr=8-3&quot;&gt;...&lt;/a&gt; is not clickable at point (746, 721). Other element would receive the click: &lt;div class=&quot;sg-col-inner&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=79.0.3945.130)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PDCDT01GY4ZVQ1&apos;, ip: &apos;192.168.2.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_231&apos;
+System info: host: &apos;PDCDT01GY4ZVQ1&apos;, ip: &apos;192.168.2.6&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\P10444~1.PDC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57874}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 165d31c7fb96164e4960370f31dce033
-*** Element info: {Using=id, value=ap_email}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\P10444~1.PDC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 54c428c044a4453cd8e9bd1928a24953
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
-	at com.amazon.pages.LoginPage.EnterUsername(LoginPage.java:18)
-	at com.amazon.testpage.LoginTest.ScenarioSeven(LoginTest.java:382)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.amazon.pages.WishListPage.CreateProductWish(WishListPage.java:162)
+	at com.amazon.testpage.CreateWishList.FourthTest(CreateWishList.java:109)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace458817438", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace458817438'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ap_email&quot;}
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace693434027", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace693434027'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;a-link-normal a-text-normal&quot; target=&quot;_blank&quot; href=&quot;/Apple-iPhone-Pro-Max-256GB/dp/B07XLS5796/ref=sr_1_3?keywords=iphone+11+pro+max+256gb&amp;amp;qid=1580972786&amp;amp;sr=8-3&quot;&gt;...&lt;/a&gt; is not clickable at point (746, 721). Other element would receive the click: &lt;div class=&quot;sg-col-inner&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=79.0.3945.130)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PDCDT01GY4ZVQ1&apos;, ip: &apos;192.168.2.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_231&apos;
+System info: host: &apos;PDCDT01GY4ZVQ1&apos;, ip: &apos;192.168.2.6&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\P10444~1.PDC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57874}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 165d31c7fb96164e4960370f31dce033
-*** Element info: {Using=id, value=ap_email}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\P10444~1.PDC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 54c428c044a4453cd8e9bd1928a24953
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -121,15 +114,15 @@ Session ID: 165d31c7fb96164e4960370f31dce033
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
-	at com.amazon.pages.LoginPage.EnterUsername(LoginPage.java:18)
-	at com.amazon.testpage.LoginTest.ScenarioSeven(LoginTest.java:382)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.amazon.pages.WishListPage.CreateProductWish(WishListPage.java:162)
+	at com.amazon.testpage.CreateWishList.FourthTest(CreateWishList.java:109)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -159,106 +152,63 @@ Session ID: 165d31c7fb96164e4960370f31dce033
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>10</td>
-<td>com.amazon.testpage.LoginTest@4d3167f4</td></tr>
-<tr>
-<td title='com.amazon.testpage.LoginTest.ScenarioSix()'><b>ScenarioSix</b><br>Test class: com.amazon.testpage.LoginTest<br>Parameters: g.gaurav2812@gmail.com, TWF1bGlAMjgxMiQ=, Hello, Gaurav, invalidEmail, invPass123, 8793100405, 1234</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ap_email&quot;}
-  (Session info: chrome=79.0.3945.130)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PDCDT01GY4ZVQ1&apos;, ip: &apos;192.168.2.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\P10444~1.PDC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57874}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 165d31c7fb96164e4960370f31dce033
-*** Element info: {Using=id, value=ap_email}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
-	at com.amazon.pages.LoginPage.EnterUsername(LoginPage.java:18)
-	at com.amazon.testpage.LoginTest.ScenarioSix(LoginTest.java:301)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1366722422", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1366722422'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ap_email&quot;}
-  (Session info: chrome=79.0.3945.130)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PDCDT01GY4ZVQ1&apos;, ip: &apos;192.168.2.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\P10444~1.PDC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57874}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 165d31c7fb96164e4960370f31dce033
-*** Element info: {Using=id, value=ap_email}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
-	at com.amazon.pages.LoginPage.EnterUsername(LoginPage.java:18)
-	at com.amazon.testpage.LoginTest.ScenarioSix(LoginTest.java:301)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>10</td>
-<td>com.amazon.testpage.LoginTest@4d3167f4</td></tr>
+<td>5</td>
+<td>com.amazon.testpage.CreateWishList@37374a5e</td></tr>
 <tr>
 <td title='com.amazon.testpage.RegistrationTest.ScenarioSix()'><b>ScenarioSix</b><br>Test class: com.amazon.testpage.RegistrationTest<br>Parameters: Gaurav Garje, 8421352651, example.amazon@gmail.com, Abcdef123, Hello, Gaurav</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;authportal-main-section&apos;]//p[contains(text(),&apos;already exists&apos;)]&quot;}
+<td><div><pre>java.lang.AssertionError: expected [You indicated you are a new customer, but an account already exists with the mobile number +91 7385502840] but found [You indicated you are a new customer, but an account already exists with the mobile number +91 8793100405]
+	at com.amazon.testpage.RegistrationTest.ScenarioSix(RegistrationTest.java:360)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1414744767", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1414744767'><pre>java.lang.AssertionError: expected [You indicated you are a new customer, but an account already exists with the mobile number +91 7385502840] but found [You indicated you are a new customer, but an account already exists with the mobile number +91 8793100405]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.amazon.testpage.RegistrationTest.ScenarioSix(RegistrationTest.java:360)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.amazon.testpage.RegistrationTest@66d1af89</td></tr>
+<tr>
+<td title='com.amazon.testpage.LoginTest.ScenarioSix()'><b>ScenarioSix</b><br>Test class: com.amazon.testpage.LoginTest<br>Parameters: g.gaurav2812@gmail.com, TWF1bGlAMjgxMiQ=, Hello, Gaurav, invalidEmail, invPass123, 8793100405, 1234</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@id=&apos;nav-link-accountList&apos;]/span[contains(text(),&apos;Hello,&apos;)]&quot;}
   (Session info: chrome=79.0.3945.130)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PDCDT01GY4ZVQ1&apos;, ip: &apos;192.168.2.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_231&apos;
+System info: host: &apos;PDCDT01GY4ZVQ1&apos;, ip: &apos;192.168.2.6&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\P10444~1.PDC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57962}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f165477f3d7f38d12136b7c130c6aad0
-*** Element info: {Using=xpath, value=//div[@id=&apos;authportal-main-section&apos;]//p[contains(text(),&apos;already exists&apos;)]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\P10444~1.PDC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55710}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b8fcbccd82e761938644a014b8b448a
+*** Element info: {Using=xpath, value=//a[@id=&apos;nav-link-accountList&apos;]/span[contains(text(),&apos;Hello,&apos;)]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -272,19 +222,19 @@ Session ID: f165477f3d7f38d12136b7c130c6aad0
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy12.getText(Unknown Source)
-	at com.amazon.pages.RegistrationPage.RegisMob(RegistrationPage.java:187)
-	at com.amazon.testpage.RegistrationTest.ScenarioSix(RegistrationTest.java:358)
+	at com.amazon.pages.VerifyUserLoggedInPage.Verifylogin(VerifyUserLoggedInPage.java:36)
+	at com.amazon.testpage.LoginTest.ScenarioSix(LoginTest.java:348)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace371932487", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace371932487'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;authportal-main-section&apos;]//p[contains(text(),&apos;already exists&apos;)]&quot;}
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace761533964", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace761533964'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@id=&apos;nav-link-accountList&apos;]/span[contains(text(),&apos;Hello,&apos;)]&quot;}
   (Session info: chrome=79.0.3945.130)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PDCDT01GY4ZVQ1&apos;, ip: &apos;192.168.2.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_231&apos;
+System info: host: &apos;PDCDT01GY4ZVQ1&apos;, ip: &apos;192.168.2.6&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\P10444~1.PDC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57962}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f165477f3d7f38d12136b7c130c6aad0
-*** Element info: {Using=xpath, value=//div[@id=&apos;authportal-main-section&apos;]//p[contains(text(),&apos;already exists&apos;)]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\P10444~1.PDC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55710}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b8fcbccd82e761938644a014b8b448a
+*** Element info: {Using=xpath, value=//a[@id=&apos;nav-link-accountList&apos;]/span[contains(text(),&apos;Hello,&apos;)]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -302,8 +252,8 @@ Session ID: f165477f3d7f38d12136b7c130c6aad0
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy12.getText(Unknown Source)
-	at com.amazon.pages.RegistrationPage.RegisMob(RegistrationPage.java:187)
-	at com.amazon.testpage.RegistrationTest.ScenarioSix(RegistrationTest.java:358)
+	at com.amazon.pages.VerifyUserLoggedInPage.Verifylogin(VerifyUserLoggedInPage.java:36)
+	at com.amazon.testpage.LoginTest.ScenarioSix(LoginTest.java:348)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -333,182 +283,8 @@ Session ID: f165477f3d7f38d12136b7c130c6aad0
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>13</td>
-<td>com.amazon.testpage.RegistrationTest@ed9d034</td></tr>
-<tr>
-<td title='com.amazon.testpage.LoginTest.ScenarioThree()'><b>ScenarioThree</b><br>Test class: com.amazon.testpage.LoginTest<br>Parameters: g.gaurav2812@gmail.com, TWF1bGlAMjgxMiQ=, Hello, Gaurav, invalidEmail, invPass123, 8793100405, 1234</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ap_email&quot;}
-  (Session info: chrome=79.0.3945.130)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PDCDT01GY4ZVQ1&apos;, ip: &apos;192.168.2.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\P10444~1.PDC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57874}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 165d31c7fb96164e4960370f31dce033
-*** Element info: {Using=id, value=ap_email}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
-	at com.amazon.pages.LoginPage.EnterUsername(LoginPage.java:18)
-	at com.amazon.testpage.LoginTest.ScenarioThree(LoginTest.java:194)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace626393072", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace626393072'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ap_email&quot;}
-  (Session info: chrome=79.0.3945.130)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PDCDT01GY4ZVQ1&apos;, ip: &apos;192.168.2.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\P10444~1.PDC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57874}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 165d31c7fb96164e4960370f31dce033
-*** Element info: {Using=id, value=ap_email}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
-	at com.amazon.pages.LoginPage.EnterUsername(LoginPage.java:18)
-	at com.amazon.testpage.LoginTest.ScenarioThree(LoginTest.java:194)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>10</td>
-<td>com.amazon.testpage.LoginTest@4d3167f4</td></tr>
-<tr>
-<td title='com.amazon.testpage.LoginTest.ScenarioTwo()'><b>ScenarioTwo</b><br>Test class: com.amazon.testpage.LoginTest<br>Parameters: g.gaurav2812@gmail.com, TWF1bGlAMjgxMiQ=, Hello, Gaurav, invalidEmail, invPass123, 8793100405, 1234</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ap_email&quot;}
-  (Session info: chrome=79.0.3945.130)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PDCDT01GY4ZVQ1&apos;, ip: &apos;192.168.2.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\P10444~1.PDC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57874}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 165d31c7fb96164e4960370f31dce033
-*** Element info: {Using=id, value=ap_email}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
-	at com.amazon.pages.LoginPage.EnterUsername(LoginPage.java:18)
-	at com.amazon.testpage.LoginTest.ScenarioTwo(LoginTest.java:165)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1223050066", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1223050066'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ap_email&quot;}
-  (Session info: chrome=79.0.3945.130)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PDCDT01GY4ZVQ1&apos;, ip: &apos;192.168.2.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\P10444~1.PDC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57874}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 165d31c7fb96164e4960370f31dce033
-*** Element info: {Using=id, value=ap_email}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
-	at com.amazon.pages.LoginPage.EnterUsername(LoginPage.java:18)
-	at com.amazon.testpage.LoginTest.ScenarioTwo(LoginTest.java:165)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>10</td>
-<td>com.amazon.testpage.LoginTest@4d3167f4</td></tr>
+<td>21</td>
+<td>com.amazon.testpage.LoginTest@8646db9</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -518,50 +294,116 @@ Session ID: 165d31c7fb96164e4960370f31dce033
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.amazon.testpage.LoginTest.ScenarioFive()'><b>ScenarioFive</b><br>Test class: com.amazon.testpage.LoginTest<br>Parameters: g.gaurav2812@gmail.com, TWF1bGlAMjgxMiQ=, Hello, Gaurav, invalidEmail, invPass123, 8793100405, 1234</td>
+<td title='com.amazon.testpage.CreateWishList.FirstTest()'><b>FirstTest</b><br>Test class: com.amazon.testpage.CreateWishList</td>
 <td></td>
-<td>6</td>
-<td>com.amazon.testpage.LoginTest@4d3167f4</td></tr>
+<td>9</td>
+<td>com.amazon.testpage.CreateWishList@37374a5e</td></tr>
 <tr>
 <td title='com.amazon.testpage.RegistrationTest.ScenarioFive()'><b>ScenarioFive</b><br>Test class: com.amazon.testpage.RegistrationTest<br>Parameters: Gaurav Garje, 8421352651, example.amazon@gmail.com, Abcdef123, Hello, Gaurav</td>
 <td></td>
-<td>4</td>
-<td>com.amazon.testpage.RegistrationTest@ed9d034</td></tr>
+<td>3</td>
+<td>com.amazon.testpage.RegistrationTest@66d1af89</td></tr>
 <tr>
-<td title='com.amazon.testpage.LoginTest.ScenarioFour()'><b>ScenarioFour</b><br>Test class: com.amazon.testpage.LoginTest</td>
+<td title='com.amazon.testpage.LoginTest.ScenarioFive()'><b>ScenarioFive</b><br>Test class: com.amazon.testpage.LoginTest<br>Parameters: g.gaurav2812@gmail.com, TWF1bGlAMjgxMiQ=, Hello, Gaurav, invalidEmail, invPass123, 8793100405, 1234</td>
 <td></td>
-<td>0</td>
-<td>com.amazon.testpage.LoginTest@4d3167f4</td></tr>
+<td>4</td>
+<td>com.amazon.testpage.LoginTest@8646db9</td></tr>
 <tr>
 <td title='com.amazon.testpage.RegistrationTest.ScenarioFour()'><b>ScenarioFour</b><br>Test class: com.amazon.testpage.RegistrationTest<br>Parameters: Gaurav Garje, 8421352651, example.amazon@gmail.com, Abcdef123, Hello, Gaurav</td>
 <td></td>
 <td>1</td>
-<td>com.amazon.testpage.RegistrationTest@ed9d034</td></tr>
+<td>com.amazon.testpage.RegistrationTest@66d1af89</td></tr>
 <tr>
-<td title='com.amazon.testpage.LoginTest.ScenarioOne()'><b>ScenarioOne</b><br>Test class: com.amazon.testpage.LoginTest<br>Parameters: g.gaurav2812@gmail.com, TWF1bGlAMjgxMiQ=, Hello, Gaurav, invalidEmail, invPass123, 8793100405, 1234</td>
+<td title='com.amazon.testpage.LoginTest.ScenarioFour()'><b>ScenarioFour</b><br>Test class: com.amazon.testpage.LoginTest</td>
 <td></td>
-<td>36</td>
-<td>com.amazon.testpage.LoginTest@4d3167f4</td></tr>
+<td>0</td>
+<td>com.amazon.testpage.LoginTest@8646db9</td></tr>
 <tr>
 <td title='com.amazon.testpage.RegistrationTest.ScenarioOne()'><b>ScenarioOne</b><br>Test class: com.amazon.testpage.RegistrationTest<br>Parameters: Gaurav Garje, 8421352651, example.amazon@gmail.com, Abcdef123, Hello, Gaurav</td>
 <td></td>
-<td>32</td>
-<td>com.amazon.testpage.RegistrationTest@ed9d034</td></tr>
+<td>30</td>
+<td>com.amazon.testpage.RegistrationTest@66d1af89</td></tr>
+<tr>
+<td title='com.amazon.testpage.LoginTest.ScenarioOne()'><b>ScenarioOne</b><br>Test class: com.amazon.testpage.LoginTest<br>Parameters: g.gaurav2812@gmail.com, TWF1bGlAMjgxMiQ=, Hello, Gaurav, invalidEmail, invPass123, 8793100405, 1234</td>
+<td></td>
+<td>29</td>
+<td>com.amazon.testpage.LoginTest@8646db9</td></tr>
 <tr>
 <td title='com.amazon.testpage.RegistrationTest.ScenarioSeven()'><b>ScenarioSeven</b><br>Test class: com.amazon.testpage.RegistrationTest<br>Parameters: Gaurav Garje, 8421352651, example.amazon@gmail.com, Abcdef123, Hello, Gaurav</td>
 <td></td>
-<td>10</td>
-<td>com.amazon.testpage.RegistrationTest@ed9d034</td></tr>
+<td>13</td>
+<td>com.amazon.testpage.RegistrationTest@66d1af89</td></tr>
+<tr>
+<td title='com.amazon.testpage.LoginTest.ScenarioSeven()'><b>ScenarioSeven</b><br>Test class: com.amazon.testpage.LoginTest<br>Parameters: g.gaurav2812@gmail.com, TWF1bGlAMjgxMiQ=, Hello, Gaurav, invalidEmail, invPass123, 8793100405, 1234</td>
+<td></td>
+<td>1</td>
+<td>com.amazon.testpage.LoginTest@8646db9</td></tr>
 <tr>
 <td title='com.amazon.testpage.RegistrationTest.ScenarioThree()'><b>ScenarioThree</b><br>Test class: com.amazon.testpage.RegistrationTest<br>Parameters: Gaurav Garje, 8421352651, example.amazon@gmail.com, Abcdef123, Hello, Gaurav</td>
 <td></td>
-<td>31</td>
-<td>com.amazon.testpage.RegistrationTest@ed9d034</td></tr>
+<td>29</td>
+<td>com.amazon.testpage.RegistrationTest@66d1af89</td></tr>
+<tr>
+<td title='com.amazon.testpage.LoginTest.ScenarioThree()'><b>ScenarioThree</b><br>Test class: com.amazon.testpage.LoginTest<br>Parameters: g.gaurav2812@gmail.com, TWF1bGlAMjgxMiQ=, Hello, Gaurav, invalidEmail, invPass123, 8793100405, 1234</td>
+<td></td>
+<td>16</td>
+<td>com.amazon.testpage.LoginTest@8646db9</td></tr>
 <tr>
 <td title='com.amazon.testpage.RegistrationTest.ScenarioTwo()'><b>ScenarioTwo</b><br>Test class: com.amazon.testpage.RegistrationTest<br>Parameters: Gaurav Garje, 8421352651, example.amazon@gmail.com, Abcdef123, Hello, Gaurav</td>
 <td></td>
-<td>35</td>
-<td>com.amazon.testpage.RegistrationTest@ed9d034</td></tr>
+<td>26</td>
+<td>com.amazon.testpage.RegistrationTest@66d1af89</td></tr>
+<tr>
+<td title='com.amazon.testpage.LoginTest.ScenarioTwo()'><b>ScenarioTwo</b><br>Test class: com.amazon.testpage.LoginTest<br>Parameters: g.gaurav2812@gmail.com, TWF1bGlAMjgxMiQ=, Hello, Gaurav, invalidEmail, invPass123, 8793100405, 1234</td>
+<td></td>
+<td>1</td>
+<td>com.amazon.testpage.LoginTest@8646db9</td></tr>
+<tr>
+<td title='com.amazon.testpage.CreateWishList.SecondTest()'><b>SecondTest</b><br>Test class: com.amazon.testpage.CreateWishList</td>
+<td></td>
+<td>4</td>
+<td>com.amazon.testpage.CreateWishList@37374a5e</td></tr>
+<tr>
+<td title='com.amazon.testpage.CreateWishList.ThirdTest()'><b>ThirdTest</b><br>Test class: com.amazon.testpage.CreateWishList</td>
+<td></td>
+<td>4</td>
+<td>com.amazon.testpage.CreateWishList@37374a5e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.amazon.testpage.CreateWishList.FifthTest()'><b>FifthTest</b><br>Test class: com.amazon.testpage.CreateWishList</td>
+<td><div><pre>java.lang.Throwable: Method CreateWishList.FifthTest()[pri:0, instance:com.amazon.testpage.CreateWishList@37374a5e] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace298862004", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace298862004'><pre>java.lang.Throwable: Method CreateWishList.FifthTest()[pri:0, instance:com.amazon.testpage.CreateWishList@37374a5e] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.amazon.testpage.CreateWishList@37374a5e</td></tr>
 </table><p>
 </body>
 </html>
