@@ -1,13 +1,23 @@
 package com.amazon.testpage;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
-
+import org.testng.annotations.BeforeClass;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import com.amazon.pages.WishListPage;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-
+import org.testng.annotations.AfterSuite;
 import java.util.concurrent.TimeUnit;
 
 import javax.swing.JOptionPane;
@@ -16,8 +26,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 
 public class CreateWishList
 {
@@ -27,8 +35,12 @@ public class CreateWishList
 	String explistname1 = "Private";
 	String explistname2 = "Public";
 	String explistname3 = "Private";
-	String explistname4 = "Private";
+	String explistname4 = "Private!!!";
 	String explistname5 = "Apple iPhone 11 Pro Max (256GB) - Gold";
+	
+	ExtentReports extent = new ExtentReports();
+	ExtentHtmlReporter reporter = new ExtentHtmlReporter("./Reports/Amazon_WISHLIST_automation.html");
+	//LoginTest loginReport = new LoginTest();
 	
 	@BeforeClass
 	public void beforeClass()
@@ -76,24 +88,44 @@ public class CreateWishList
 	@Test(priority = 1) // -------------------------------------- Default Shopping List
 	public void FirstTest() throws InterruptedException
 	{
+		extent.attachReporter(reporter);
+		ExtentTest logger= extent.createTest("Default Shopping List");
+		
 		WP = new WishListPage(driver);
 		WP.HoverAndClickOnCreateList();
-		WP.CreateBackGroundList();	
+		WP.CreateBackGroundList();
+		logger.log(Status.INFO,"Default Shopping List created");
 		String DefValue = WP.AssertDefaultList();
+		if(DefValue.equals(explistname1)) {
+			   logger.log(Status.PASS,"Completed test execution");   
+			  }else
+			  {
+			   logger.log(Status.FAIL,"Test case FAILED");
+			  }
 		Assert.assertEquals(DefValue, explistname1);
 
 	}
 
 	
+	
 	@Test(dependsOnMethods = "FirstTest") // --------------------------------------Electronics
 	public void SecondTest() throws InterruptedException
 	{
+		extent.attachReporter(reporter);
+		ExtentTest logger= extent.createTest("Electronics Shopping List");
 		
 		WP.CreateElectroList();
+		logger.log(Status.INFO,"Electronics Shopping List created");
 		String ElecValue  = WP.AssertElecList();
+		if(ElecValue.equals(explistname2)) {
+			   logger.log(Status.PASS,"Completed test execution");   
+			  }else
+			  {
+			   logger.log(Status.FAIL,"Test case FAILED");
+			  }
 		Assert.assertEquals(ElecValue, explistname2);
 	}
-
+/*
 	
 	@Test(dependsOnMethods = "SecondTest") // -------------------------------------------Grocery
 	public void ThirdTest() throws InterruptedException
@@ -102,16 +134,26 @@ public class CreateWishList
 		String GrocValue  = WP.AssertGroceryList();
 		Assert.assertEquals(GrocValue, explistname3);
 	}
+	*/
 
-	@Test(dependsOnMethods = "ThirdTest") // ------------------------------------------------Phones
+	@Test(dependsOnMethods = "SecondTest") // ------------------------------------------------Phones
 	public void FourthTest() throws InterruptedException
 	{
+		extent.attachReporter(reporter);
+		ExtentTest logger= extent.createTest("Phones Shopping List");
 		WP.CreateProductWish();
+		logger.log(Status.INFO,"Phones Shopping List created");
 		WP.ClickAfterPhone();
 		String PhonesVal = WP.AssertPhones();
+		if(PhonesVal.equals(explistname4)) {
+			   logger.log(Status.PASS,"Completed test execution");   
+			  }else
+			  {
+			   logger.log(Status.FAIL,"Test case FAILED");
+			  }
 		Assert.assertEquals(PhonesVal, explistname4);
 	}
-
+/*
 	@Test(dependsOnMethods = "FourthTest") // ---------------------------------------------------Phones2
 	public void FifthTest() throws InterruptedException
 	{
@@ -121,7 +163,7 @@ public class CreateWishList
 		Assert.assertEquals(AssertInElec, explistname5);
 	
 	}
-	
+	*/
 	@BeforeMethod
 	public void beforeMethod()
 	{
@@ -149,6 +191,13 @@ public class CreateWishList
 		{ 
 		}
 		driver.quit();
+		
+	}
+	
+	@AfterSuite
+	public void afterSuite() throws InterruptedException
+	{
+		extent.flush();
 	}
 
 }

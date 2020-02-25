@@ -7,9 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class RegistrationPage {
+	private WebDriver driver;
 
- private WebDriver driver;
- 
  @FindBy(id="createAccountSubmit") 
  private WebElement CreateNewAccountButton;
  
@@ -44,8 +43,8 @@ public class RegistrationPage {
  private WebElement CaptchaMsg;
  
  public RegistrationPage(WebDriver driver) { 
- // initializing instance variable with local variable
- this.driver = driver;
+	// initializing instance variable with local variable
+	 this.driver = driver;	 
  // This initElements method will create all WebElemnts
  PageFactory.initElements(driver, this);
  }

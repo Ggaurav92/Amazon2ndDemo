@@ -330,7 +330,7 @@ public class WishListPage {
 		//WebElement ElementYESbutton = driver.findElement(By.xpath("//input[@name='submit.save' and @type=\"submit\"]"));
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;				
 		js1.executeScript("arguments[0].click();", ElementYESbutton);
-		System.out.println("CLicking on Delete button");
+		//System.out.println("CLicking on Delete button");
 			}
 		} 
 		catch (Exception e)	// switching to another tab

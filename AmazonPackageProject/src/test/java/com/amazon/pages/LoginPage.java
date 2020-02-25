@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
+	
  private WebDriver driver;
 
  @FindBy(id = "ap_email")

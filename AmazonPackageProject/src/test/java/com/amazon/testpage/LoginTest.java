@@ -2,8 +2,15 @@ package com.amazon.testpage;
 
 
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
-
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
 import com.amazon.pages.LoginPage;
 import com.amazon.pages.RegistrationPage;
 import com.amazon.pages.VerifyUserLoggedInPage;
@@ -14,8 +21,6 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.BeforeClass;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.Base64;
@@ -37,10 +42,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-
-
 //import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 //import com.aventstack.extentreports.MediaEntityBuilder;
@@ -59,7 +60,7 @@ public class LoginTest {
  //ExtentReports extent;
  //private static ExtentTest logger;
  ExtentReports extent = new ExtentReports();
- ExtentHtmlReporter reporter = new ExtentHtmlReporter("./Reports/Amazonee_LOGIN_automation.html");
+ ExtentHtmlReporter reporter = new ExtentHtmlReporter("./Reports/Amazon_LOGIN_automation.html");
  
  
  @Test(dataProvider = "getdatalogin") //ScenarioOne : Valid email id and password is entered.
@@ -132,10 +133,10 @@ public class LoginTest {
    logger.log(Status.PASS,"Completed test execution");   
   }else
   {
-   logger.fail("Test case FAILED");
+   AssertJUnit.fail("Test case FAILED");
   }
   
-  Assert.assertEquals(result, expstring);
+  AssertJUnit.assertEquals(result, expstring);
   
 
   Thread.sleep(4000);
@@ -153,6 +154,7 @@ public class LoginTest {
 
  }
 
+ /*
  @Test(dataProvider = "getdatalogin") //ScenarioTwo : invalid email id.
  public void ScenarioTwo(String usrnm, String pswd, String expstring, String Invldemail, String InvlPass, String ValidPhnNo, 
    String InvalidPhnNo) throws IOException {
@@ -180,7 +182,10 @@ public class LoginTest {
   
 
  }
-
+ 
+ */
+ 
+/*
  @Test(dataProvider = "getdatalogin") //ScenarioThree : Valid email id and invalid password is entered.
  public void ScenarioThree(String usrnm, String pswd, String expstring, String Invldemail, String InvlPass,
    String ValidPhnNo, String InvalidPhnNo) throws InterruptedException, IOException {
@@ -230,6 +235,7 @@ public class LoginTest {
   Assert.assertEquals(LP.InvalidEmlMesage(), "Your password is incorrect");
   
  }
+*/
 
  @Test() //ScenarioFour : Email id and password are left blank and Sign in entered.
  public void ScenarioFour() throws IOException {
@@ -242,11 +248,11 @@ public class LoginTest {
    logger.log(Status.PASS,"Completed test execution");   
   }else
   {
-   logger.fail("Test case FAILED");
+   AssertJUnit.fail("Test case FAILED");
   }
   
   
-  Assert.assertEquals(LP.BlankEmail(), "Enter your email or mobile phone number");
+  AssertJUnit.assertEquals(LP.BlankEmail(), "Enter your email or mobile phone number");
  }
 
  @Test(dataProvider = "getdatalogin") //ScenarioFive : Forgot your password is working as expected
@@ -280,14 +286,15 @@ LoginTest.screencapture(driver, "./Screenshots/LoginPage/S05I01-AfterForgotPassw
 	   logger.log(Status.PASS,"Completed test execution");   
 	  }else
 	  {
-	   logger.fail("Test case FAILED");
+	   AssertJUnit.fail("Test case FAILED");
 	  }
   
   // String AssistText = LP.PassAssist();
-  Assert.assertEquals(LP.PassAssist(), "Password assistance"); 
+  AssertJUnit.assertEquals(LP.PassAssist(), "Password assistance"); 
 
  }
 
+ /*
  @Test(dataProvider = "getdatalogin") //ScenarioSix : Valid Phn No and password is entered.
  public void ScenarioSix(String usrnm, String pswd, String expstring, String Invldemail, String InvlPass,
    String ValidPhnNo, String InvalidPhnNo) throws InterruptedException, IOException {
@@ -370,7 +377,9 @@ LoginTest.screencapture(driver, "./Screenshots/LoginPage/S05I01-AfterForgotPassw
   LoginTest.screencapture(driver, "./Screenshots/LoginPage/S06I07-AfterSignOut.png");// screenshot code line
 
  }
-
+ */
+ 
+/*
  @Test(dataProvider = "getdatalogin") //ScenarioSeven : Invalid Phone No is entered.
  public void ScenarioSeven(String usrnm, String pswd, String expstring, String Invldemail, String InvlPass,
    String ValidPhnNo, String InvalidPhnNo) throws IOException {
@@ -393,7 +402,7 @@ LoginTest.screencapture(driver, "./Screenshots/LoginPage/S05I01-AfterForgotPassw
   
   Assert.assertEquals(LP.InvalidEmlMesage(), "We cannot find an account with that mobile number");
  }
-
+*/
  @BeforeMethod
  public void beforeMethod() throws InterruptedException {
   LP = new LoginPage(driver);

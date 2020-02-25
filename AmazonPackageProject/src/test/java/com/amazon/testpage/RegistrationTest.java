@@ -2,8 +2,15 @@ package com.amazon.testpage;
 
 
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
-
+import org.testng.annotations.BeforeClass;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import com.amazon.pages.RegistrationPage;
 import com.amazon.pages.VerifyUserLoggedInPage;
 import com.aventstack.extentreports.ExtentReports;
@@ -13,9 +20,8 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.BeforeClass;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -28,9 +34,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-
 import org.openqa.selenium.OutputType;
 
 public class RegistrationTest {
@@ -46,17 +49,20 @@ public class RegistrationTest {
  //ExtentTest logger1;
  
  ExtentReports extent = new ExtentReports();
- ExtentHtmlReporter reporter = new ExtentHtmlReporter("./Reports/Amazonee_Registration_automation.html");
+ ExtentHtmlReporter reporter = new ExtentHtmlReporter("./Reports/Amazon_Registration_automation.html");
+ 
+ 
+ //LoginTest loginReport = new LoginTest();
  
 
  @Test(dataProvider = "getdata") //ScenarioOne : Valid Credentials
  public void ScenarioOne(String fullnm, String phno, String eml, String pwd, String expstring)throws IOException {
 
   //Report related code    
-  extent.attachReporter(reporter);
-  ExtentTest logger1=extent.createTest("RegisTest 1 -Verify with Valid Credentials");    
+	 extent.attachReporter(reporter);
+	 ExtentTest logger = extent.createTest("RegisTest 1 -Verify with Valid Credentials");    
   
-  logger1.log(Status.INFO,"====Registration Test --> Scenario One =====");
+	 logger.log(Status.INFO,"====Registration Test --> Scenario One =====");
   RegistrationTest.screencapture(driver, "./Screenshots/RegistrationPage/S01I01- LoginPage.png");// screenshot code line
   RP.EnterUserDetails(fullnm, phno, eml, pwd);
   RegistrationTest.screencapture(driver, "./Screenshots/RegistrationPage/S01I02- RegistrationDetailScreen.png"); // Screenshot code line
@@ -66,7 +72,7 @@ public class RegistrationTest {
   RP.SubmitAction();
   RegistrationTest.screencapture(driver, "./Screenshots/RegistrationPage/S01I03- DetailsSubmitedScreen.png");
 
-  logger1.log(Status.INFO,"All details entered and submitted");
+  logger.log(Status.INFO,"All details entered and submitted");
 
   String captchaText = "Enter the characters as they are shown in the image.";
 
@@ -74,7 +80,7 @@ public class RegistrationTest {
 
    while (captchaText.equals(RP.CaptchTxtMatch())) {
 
-    logger1.log(Status.INFO,"We are on captcha page");
+	   logger.log(Status.INFO,"We are on captcha page");
 
     // prompt user to enter captcha
     String captchaVal1 = JOptionPane.showInputDialog("Please enter the captcha value : ");
@@ -106,14 +112,14 @@ public class RegistrationTest {
    String result = VP.Verifylogin();
 
    if(result.equals(expstring)) {
-    logger1.log(Status.PASS,"Completed test execution");   
+	   logger.log(Status.PASS,"Completed test execution");   
     //logger1.log(Status.FAIL,"Test case FAILED");
    }else
    {
-    logger1.log(Status.FAIL,"Test case FAILED");
+	   logger.log(Status.FAIL,"Test case FAILED");
    }
    
-   Assert.assertEquals(result, expstring);
+   AssertJUnit.assertEquals(result, expstring);
    
 
    Thread.sleep(2000);
@@ -130,6 +136,7 @@ public class RegistrationTest {
 
  }
 
+ /*
  @Test(dataProvider = "getdata") //ScenarioTwo : Enter Valid mob no and then change mob no 
  public void ScenarioTwo(String fullnm, String phno, String eml, String pwd, String expstring) throws IOException {
   
@@ -197,7 +204,8 @@ public class RegistrationTest {
   Assert.assertEquals(RP.CheckPrefilledVals()[2], eml);
   
  }
-
+*/
+ /*
  @Test(dataProvider = "getdata")//ScenarioThree : Check if Resend OTP button
  public void ScenarioThree(String fullnm, String phno, String eml, String pwd, String expstring) throws InterruptedException, IOException {
   
@@ -250,17 +258,17 @@ public class RegistrationTest {
   }  
   Assert.assertEquals(RP.ChekSuccessMsg(), SuccessMsg);
  }
- 
+ */
  
 
  @Test (dataProvider = "getdata") //ScenarioFour : All details entered as blanks
  public void ScenarioFour(String fullnm, String phno, String eml, String pwd, String expstring) throws IOException {
 	
 	//Report related code    
-	  extent.attachReporter(reporter);
-	  ExtentTest logger1=extent.createTest("RegisTest 4 -Entered as blanks");    
+	 extent.attachReporter(reporter);
+	  ExtentTest logger=extent.createTest("RegisTest 4 -Entered as blanks");    
 
-	  logger1.log(Status.INFO,"====Registration Test --> Scenario Four =====");
+	  logger.log(Status.INFO,"====Registration Test --> Scenario Four =====");
 	  
 	  
 
@@ -268,7 +276,7 @@ public class RegistrationTest {
   RegistrationTest.screencapture(driver, "./Screenshots/RegistrationPage/S04I01- RegistrationDetailScreen.png"); // Screenshot code line
   RP.SubmitAction();
   RegistrationTest.screencapture(driver, "./Screenshots/RegistrationPage/S04I02- DetailsSubmitedScreen.png");
-  logger1.log(Status.INFO,"All blank details entered and submitted");
+  logger.log(Status.INFO,"All blank details entered and submitted");
   
   String BlankEmailMsg = "Enter your name";
   String BlankMobMsg = "Enter your mobile number";
@@ -276,19 +284,19 @@ public class RegistrationTest {
   
 //Extent report pass or fail
   if(RP.CheckBlankEmailMsg().equals(BlankEmailMsg)) {
-   logger1.log(Status.PASS,"Completed test execution");  
+	  logger.log(Status.PASS,"Completed test execution");  
   }
   else if(RP.CheckBlankMobMsg().equals(BlankEmailMsg)){
-   logger1.log(Status.PASS,"Completed test execution");
+	  logger.log(Status.PASS,"Completed test execution");
    
   }
   else if(RP.CheckBlankPassMsg().equals(BlankPassMsg)){
-   logger1.log(Status.PASS,"Completed test execution");
+	  logger.log(Status.PASS,"Completed test execution");
    
   }
   else
   {
-   logger1.log(Status.FAIL,"Test case FAILED");
+	  logger.log(Status.FAIL,"Test case FAILED");
   }
 
   
@@ -304,6 +312,7 @@ public class RegistrationTest {
   Assert.assertEquals(RP.CheckBlankPassMsg(), BlankPassMsg);
  }
  
+ /*
  @Test (dataProvider = "getdata") //ScenarioFive : Already registered Email ID
  public void ScenarioFive(String fullnm, String phno, String eml, String pwd, String expstring) throws IOException {
 	//Report related code    
@@ -333,7 +342,8 @@ public class RegistrationTest {
   Assert.assertEquals(RP.RegisEmail(), RegisEmailmsg);
   
  }
- 
+ */
+ /*
  @Test (dataProvider = "getdata") //Scenario Six : Already registered Phone Number
  public void ScenarioSix(String fullnm, String phno, String eml, String pwd, String expstring) throws IOException {
 	//Report related code    
@@ -360,7 +370,8 @@ public class RegistrationTest {
   Assert.assertEquals(RP.RegisMob(), Regismobmsg);
   
  }
- 
+ */
+ /*
  @Test (dataProvider = "getdata") //Scenario Seven : Invalid Phone Number
  public void ScenarioSeven(String fullnm, String phno, String eml, String pwd, String expstring) throws IOException {
 	//Report related code    
@@ -411,7 +422,7 @@ public class RegistrationTest {
   Assert.assertEquals(RP.RegisEmail(), InvMob);
   
  }
- 
+ */
  @BeforeMethod
  public void beforeMethod() {
   
@@ -467,9 +478,15 @@ public class RegistrationTest {
  @AfterClass
  public void afterClass() {
   driver.quit();
-  extent.flush();
+  
  }
 
+ @AfterSuite
+ public void afterSuite() {
+  
+  extent.flush();
+ }
+ 
  public static void screencapture(WebDriver driver, String fname) throws IOException {
   TakesScreenshot ts = (TakesScreenshot) driver;
   File source = ts.getScreenshotAs(OutputType.FILE);
